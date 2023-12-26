@@ -1,0 +1,56 @@
+package com.example.contactslistkmp.ui.theme
+
+import androidx.compose.material3.darkColorScheme
+import androidx.compose.material3.lightColorScheme
+
+val DarkColorScheme = darkColorScheme(
+    primary = DarkColors.primary,
+    secondary = DarkColors.secondary,
+    tertiary = DarkColors.tertiary,
+    onPrimary = DarkColors.onPrimary,
+    primaryContainer = DarkColors.primaryContainer,
+    onPrimaryContainer = DarkColors.onPrimaryContainer,
+    onSecondary = DarkColors.onSecondary,
+    secondaryContainer = DarkColors.secondaryContainer,
+    onSecondaryContainer = DarkColors.onSecondaryContainer,
+    onTertiary = DarkColors.onTertiary,
+    onTertiaryContainer = DarkColors.onTertiaryContainer,
+    tertiaryContainer = DarkColors.tertiaryContainer,
+    background = DarkColors.background,
+    onBackground = DarkColors.onBackground,
+    surface = DarkColors.onSurface,
+    onSurface = DarkColors.onSurface,
+    surfaceVariant = DarkColors.surfaceVariant,
+    onSurfaceVariant = DarkColors.onSurfaceVariant,
+    error = DarkColors.error,
+    onError = DarkColors.onError,
+    errorContainer = DarkColors.errorContainer,
+    onErrorContainer = DarkColors.onErrorContainer,
+    outline = DarkColors.outline,
+)
+
+val LightColorScheme = lightColorScheme(
+    primary = LightColors.primary,
+    secondary = LightColors.secondary,
+    tertiary = LightColors.tertiary,
+    onPrimary = LightColors.onPrimary,
+    primaryContainer = LightColors.primaryContainer,
+    onPrimaryContainer = LightColors.onPrimaryContainer,
+    onSecondary = LightColors.onSecondary,
+    secondaryContainer = LightColors.secondaryContainer,
+    onSecondaryContainer = LightColors.onSecondaryContainer,
+    onTertiary = LightColors.onTertiary,
+    onTertiaryContainer = LightColors.onTertiaryContainer,
+    tertiaryContainer = LightColors.tertiaryContainer,
+    background = LightColors.background,
+    onBackground = LightColors.onBackground,
+    surface = LightColors.onSurface,
+    onSurface = LightColors.onSurface,
+    surfaceVariant = LightColors.surfaceVariant,
+    onSurfaceVariant = LightColors.onSurfaceVariant,
+    error = LightColors.error,
+    onError = LightColors.onError,
+    errorContainer = LightColors.errorContainer,
+    onErrorContainer = LightColors.onErrorContainer,
+    outline = LightColors.outline,
+)
