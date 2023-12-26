@@ -114,15 +114,15 @@ class ContactListViewModel(
     private fun onUpdateNewContactHandle(event: ContactListEvent) {
         when (event) {
             is ContactListEvent.OnEmailChanged -> {
-                newContact = newContact?.copy(email = event.value)
+                newContact = newContact?.copy(email = event.value.trim())
             }
 
             is ContactListEvent.OnFirstNameChanged -> {
-                newContact = newContact?.copy(firstName = event.value)
+                 newContact = newContact?.copy(firstName = event.value.trim())
             }
 
             is ContactListEvent.OnLastNameChanged -> {
-                newContact = newContact?.copy(lastName = event.value)
+                newContact = newContact?.copy(lastName = event.value.trim())
             }
 
             is ContactListEvent.OnPhoneChanged -> {
@@ -139,7 +139,7 @@ class ContactListViewModel(
 
     private fun onSaveContactHandle() {
         newContact?.let { contact ->
-            var result = ContactValidator.validateContact(contact)
+            val result = ContactValidator.validateContact(contact)
 
             if (result.hasError()) {
                 _state.update {
